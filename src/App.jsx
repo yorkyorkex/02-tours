@@ -42,6 +42,14 @@ const App = () => {
         <div className="title">
           <h2>No Tours Left</h2>
           <div className="title-underline"></div>
+          <button
+            type="button"
+            className="btn"
+            style={{ marginTop: '2rem' }}
+            onClick={() => fetchTours()}
+          >
+            Refresh
+          </button>
         </div>
       </main>
     )
