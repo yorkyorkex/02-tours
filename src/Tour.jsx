@@ -9,7 +9,11 @@ const Tour = ({ id, image, info, price, name, removeTour }) => {
         <h5>{name}</h5>
         <p>{info}</p>
         <div className="tour-footer">
-          <button className="btn" onClick={() => removeTour(id)}>
+          <button
+            type="button"
+            className="btn btn-block delete-btn"
+            onClick={() => removeTour(id)}
+          >
             Not Interested
           </button>
         </div>
